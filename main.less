@@ -1,5 +1,5 @@
 /**
- * Theme Soft-Dark Copyright (c) 2014 Rui Afonso Pereira.
+ * Theme Dark-Brackets-Theme Copyright (c) 2015 Rui Jacek Berbecki.
  *
  * Licensed under MIT
  */
@@ -13,8 +13,8 @@
 @string       : #cad685;
 @link         : #555555;
 
-@orange       : #5fde7c;
-@blue         : #cc6685;
+@special-green: #5fde7c;
+@pink-txt     : #cc6685;
 @light-blue   : #95bfb5;
 @purple       : #b294bb;
 @green        : #b5bd68;
@@ -22,21 +22,22 @@
 @aqua         : #8abeb7;
 @yellow       : #dfc081;
 @gray         : #7e7e7e;
+@dark-gray    : #333; // whitespace
 
 /* Selection colors */
 @selection-color-focused   : rgba(51, 153, 255, 0.31);
-@selection-color-unfocused : #424242;
+@selection-color-unfocused : darken(@background, 30%);
 
 @activeline-bgcolor        : #0f0f0f;
 @activeline-number-bgcolor : rgba(96, 96, 96, 0.5);
 @matching-bracket          : rgba(51, 153, 255, 0.45);
 
-.CodeMirror .cm-keyword    { color: @blue; }
+.CodeMirror .cm-keyword    { color: @pink-txt; }
 .CodeMirror .cm-atom       { color: @yellow; }
 .CodeMirror .cm-number     { color: @yellow; }
 .CodeMirror .cm-def        { color: @plain-text; }
 .CodeMirror .cm-variable   { color: @plain-text; }
-.CodeMirror .cm-variable-2 { color: @blue; }
+.CodeMirror .cm-variable-2 { color: @pink-txt; }
 .CodeMirror .cm-variable-3 { color: @yellow; }
 .CodeMirror .cm-property   { color: saturate(@plain-text, 30%); }
 .CodeMirror .cm-operator   { color: @plain-text; }
@@ -48,11 +49,11 @@
 .CodeMirror .cm-qualifier  { color: @purple; }
 .CodeMirror .cm-builtin    { color: @red; }
 .CodeMirror .cm-bracket    { color: @plain-text; }
-.CodeMirror .cm-tag        { color: @blue; }
+.CodeMirror .cm-tag        { color: @pink-txt; }
 .CodeMirror .cm-attribute  { color: @light-blue; }
 .CodeMirror .cm-header     { color: @purple; }
-.CodeMirror .cm-quote      { color: @blue; }
-.CodeMirror .cm-hr         { color: @orange; }
+.CodeMirror .cm-quote      { color: @pink-txt; }
+.CodeMirror .cm-hr         { color: @special-green; }
 .CodeMirror .cm-link       { color: @link; }
 .CodeMirror .cm-rangeinfo  { color: @aqua; }
 .CodeMirror .cm-minus      { color: @gray; }
@@ -78,7 +79,7 @@
 
 .CodeMirror .CodeMirror-gutters {
     background-color: #222;
-    //border-right: 1px solid #47484b;
+    border-right: 1px solid #2c2c2c;
 }
 
 .CodeMirror-activeline .CodeMirror-gutter-elt {
@@ -119,4 +120,9 @@
     border-left: none !important;
     border-bottom: 1px solid @plain-text;
     width: 1.2ex;
+}
+
+.CodeMirror .cm-dk-whitespace-leading-space:before,
+.CodeMirror .cm-dk-whitespace-space:before{
+    background-color: @darg-gray;
 }
