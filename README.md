@@ -1,2 +1,2 @@
 # dark-brackets-theme
-Dark theme for [ ] Drackets
+Dark theme for [ ] Brackets
