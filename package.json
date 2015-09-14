@@ -2,8 +2,8 @@
     "title": "Berek Dark Theme",
     "name": "dark-brackets-theme",
     "description": "Twilight theme from CodeMirror for Hurra Communications",
-    "version": "1.0.0",
-    "author": "Jacek Berbecki <jacek.berbecki@hurra.com>",
+    "version": "1.0.1",
+    "author": "Jacek Berbecki <berbecki@gmail.com>",
     "homepage": "https://github.com/berbecki/dark-brackets-theme",
     "repository": {
         "type": "git",
